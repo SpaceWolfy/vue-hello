@@ -4,18 +4,51 @@
   box-sizing: border-box;
 }
 
+.pos-abs {
+  position: absolute;
+}
+
 body {
   font-family: sans-serif, Helvetica, Arial;
 }
 
 .main-container {
   height: 100vh;
+  position: relative;
+}
+
+.conversation-cont {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .main-container h1 {
   font-size: 40px;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+}
+
+.username-in {
+  margin-left: 10px;
+  font-size: 33px;
+  border: 0px;
+  height: 30px;
+  padding-bottom: 5px;
+  width: 300px;
+  border-bottom: 2px solid rgb(226, 50, 50);
+}
+
+.username-in:focus {
+  outline: none;
+}
+
+.print-uname {
+  margin-top: 40px;
+  font-size: 30px;
+  text-align: center;
+}
+
+.image img {
+  width: 600px;
+  border: 5px solid rgb(226, 50, 50);
+  margin-top: 10px;
 }

@@ -4,6 +4,11 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="icon"
+      type="image/gif/png"
+      href="https://c.tenor.com/lnzb_NOYs1cAAAAC/baby-yoda.gif"
+    />
     <title>Vue Hello</title>
     <link rel="stylesheet" href="css/style.css" />
     <script src="https://cdn.jsdelivr.net/npm/vue"></script>
@@ -11,7 +16,19 @@
   <body>
     <div id="app">
       <div class="main-container">
-        <h1 class="data-m-print">{{message}}</h1>
+        <div class="conversation-cont pos-abs">
+          <h1 class="data-m-print">
+            {{message}}
+            <input type="text" class="username-in" v-model="userName" />
+          </h1>
+
+          <div class="print-uname">
+            <strong>Ciao {{userName}}, bella questa gif, vero?</strong>
+            <div class="image">
+              <img v-bind:src="imageSet" />
+            </div>
+          </div>
+        </div>
       </div>
     </div>
 
