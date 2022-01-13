@@ -29,10 +29,10 @@ body {
 
 .username-in {
   margin-left: 10px;
-  font-size: 33px;
+  font-size: 32px;
   border: 0px;
   height: 30px;
-  padding-bottom: 5px;
+  padding-bottom: 4px;
   width: 300px;
   border-bottom: 2px solid rgb(226, 50, 50);
 }

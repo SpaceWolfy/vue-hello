@@ -19,11 +19,15 @@
         <div class="conversation-cont pos-abs">
           <h1 class="data-m-print">
             {{message}}
-            <input type="text" class="username-in" v-model="userName" />
+            <input
+              type="text"
+              class="username-in"
+              v-on:keyup.enter="submitValue"
+            />
           </h1>
 
           <div class="print-uname">
-            <strong>Ciao {{userName}}, bella questa gif, vero?</strong>
+            <strong class="str1"></strong>
             <div class="image">
               <img v-bind:src="imageSet" />
             </div>
